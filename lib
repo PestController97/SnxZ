@@ -1,3 +1,4 @@
+print("Launch")
 local Library={};
 local HelpSections={}
 getgenv().PlayerDropType='Both'
