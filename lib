@@ -1,4 +1,3 @@
-print("Launch")
 local Library={};
 local HelpSections={}
 getgenv().PlayerDropType='Both'
@@ -65,7 +64,7 @@ function Library:Initiate()
 
     ScrollingFrame.Parent = Categories
     ScrollingFrame.Active = true
-    ScrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 78, 78)
+    ScrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
     ScrollingFrame.BackgroundTransparency = 1.000
     ScrollingFrame.Position = UDim2.new(0.100000001, 0, 0.26000011, 0)
     ScrollingFrame.Size = UDim2.new(0.800000012, 0, 0.65, 0)
@@ -79,7 +78,7 @@ function Library:Initiate()
     local Frame = Instance.new("Frame")
     Frame.Name='Categories'
     Frame.Parent = ScrollingFrame
-    Frame.BackgroundColor3 = Color3.fromRGB(255, 78, 78)
+    Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
     Frame.BackgroundTransparency = 1.000
     Frame.Size = UDim2.new(1, 0, 0, 24)
     Categories_2.Name = "Categories"
@@ -172,7 +171,7 @@ function Library:Initiate()
 
         Notice.Name = "Notice"
         Notice.Parent = NoticeGUI
-        Notice.BackgroundColor3 = Color3.fromRGB(255, 78, 78)
+        Notice.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
         Notice.BackgroundTransparency = 1.000
         Notice.BorderSizePixel = 0
         Notice.Size = UDim2.new(1, 0, 1, 0)
@@ -198,7 +197,7 @@ function Library:Initiate()
         UICorner_2.Parent=DropShadow;
 
         TextLabel.Parent = Main
-        TextLabel.BackgroundColor3 = Color3.fromRGB(255, 78, 78)
+        TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
         TextLabel.BackgroundTransparency = 1.000
         TextLabel.BorderSizePixel = 0
         TextLabel.Position = UDim2.new(0, 10, 0, 10)
@@ -206,7 +205,7 @@ function Library:Initiate()
         TextLabel.ZIndex = 5
         TextLabel.Font = Enum.Font.GothamBold
         TextLabel.Text = OptionText or "Are You Sure?"
-        TextLabel.TextColor3 = Color3.fromRGB(255, 78, 78)
+        TextLabel.TextColor3 = Color3.fromRGB(255,255,255)
         TextLabel.TextSize = 24.000
         TextLabel.TextWrapped = true
         UICorner_3.Parent=TextLabel
@@ -246,7 +245,7 @@ function Library:Initiate()
         TextLabel_2.ZIndex = 5
         TextLabel_2.Font = Enum.Font.GothamBold
         TextLabel_2.Text = "Decline"
-        TextLabel_2.TextColor3 = Color3.fromRGB(255, 78, 78)
+        TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
         TextLabel_2.TextSize = 23.000
         TextLabel_2.TextWrapped = true
         UICorner_6.Parent=TextLabel2;
@@ -279,7 +278,7 @@ function Library:Initiate()
         UICorner_8.Parent=DropShadow_3;
 
         TextLabel_3.Parent = Aux
-        TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 78, 78)
+        TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
         TextLabel_3.BackgroundTransparency = 1.000
         TextLabel_3.BorderSizePixel = 0
         TextLabel_3.Position = UDim2.new(0, 25, 0, 0)
@@ -287,7 +286,7 @@ function Library:Initiate()
         TextLabel_3.ZIndex = 5
         TextLabel_3.Font = Enum.Font.GothamBold
         TextLabel_3.Text = "Accept"
-        TextLabel_3.TextColor3 = Color3.fromRGB(255, 78, 78)
+        TextLabel_3.TextColor3 = Color3.fromRGB(255,255,255)
         TextLabel_3.TextSize = 23.000
         TextLabel_3.TextWrapped = true
         UICorner_9.Parent=TextLabel_3;
@@ -303,19 +302,19 @@ function Library:Initiate()
         local Frame = Instance.new("Frame")
         Frame.Name='Categories'
         Frame.Parent = ScrollingFrame
-        Frame.BackgroundColor3 = Color3.fromRGB(255, 78, 78)
+        Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
         Frame.BackgroundTransparency = 1.000
         Frame.Size = UDim2.new(1, 0, 0, 25)
         ImageButton.Parent = Frame
-        ImageButton.BackgroundColor3 =Color3.fromRGB(255, 78, 78)
-        ImageButton.ImageColor3=(CategoryAmount==1 and Color3.fromRGB(0,122,255))or Color3.fromRGB(255, 78, 78)
+        ImageButton.BackgroundColor3 =Color3.fromRGB(255, 255, 255)
+        ImageButton.ImageColor3=(CategoryAmount==1 and Color3.fromRGB(0,122,255))or Color3.fromRGB(255, 255, 255)
         ImageButton.BackgroundTransparency = 1.000
         ImageButton.BorderSizePixel = 0
         ImageButton.Size = UDim2.new(0.200000003, 0, 1.2, 0)
         ImageButton.AutoButtonColor = false
         ImageButton.Image ='http://www.roblox.com/asset/?id='..ID;
         TextButton.Parent = Frame
-        TextButton.BackgroundColor3 = Color3.fromRGB(255, 78, 78)
+        TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
         TextButton.BackgroundTransparency = 1.000
         TextButton.BorderSizePixel = 0
         TextButton.Position = UDim2.new(0.220000003, 0, 0.2, 0)
@@ -323,15 +322,15 @@ function Library:Initiate()
         TextButton.AutoButtonColor = false
         TextButton.Font = Enum.Font.GothamBold
         TextButton.Text = Name
-        TextButton.TextColor3 = (CategoryAmount==1 and Color3.fromRGB(0,122,255))or Color3.fromRGB(255, 78, 78)
+        TextButton.TextColor3 = (CategoryAmount==1 and Color3.fromRGB(0,122,255))or Color3.fromRGB(255, 255, 255)
         TextButton.TextSize = 13
         TextButton.ClipsDescendants=true;
         TextButton.TextXAlignment = Enum.TextXAlignment.Left
         local function func()
             for i,v in next,ScrollingFrame:GetChildren()do 
                 if v:IsA'Frame'and v~=Frame and v:FindFirstChild'TextButton'and v:FindFirstChild'ImageButton'then 
-                    v.TextButton.TextColor3=Color3.fromRGB(255, 78, 78);
-                    v.ImageButton.ImageColor3=Color3.fromRGB(255, 78, 78);
+                    v.TextButton.TextColor3=Color3.fromRGB(255,255,255);
+                    v.ImageButton.ImageColor3=Color3.fromRGB(255,255,255);
                     Sections:FindFirstChild(tostring(v.TextButton.Text)).Visible=false;
                 elseif v:IsA'Frame'and v:FindFirstChild'TextButton'and v:FindFirstChild'ImageButton'then
                     Sections:FindFirstChild(tostring(v.TextButton.Text)).Visible=true;
@@ -357,14 +356,14 @@ function Library:Initiate()
             ScrollingFrame_2.Visible=(CategoryAmount==1 and true)or false;
             ScrollingFrame_2.Name=Name
             ScrollingFrame_2.AnchorPoint = Vector2.new(0.5, 0.5)
-            ScrollingFrame_2.BackgroundColor3 = Color3.fromRGB(255, 78, 78)
+            ScrollingFrame_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
             ScrollingFrame_2.BackgroundTransparency = 1.000
             ScrollingFrame_2.Position = UDim2.new(0.615, 0, 0.5, 0)
             ScrollingFrame_2.Size = UDim2.new(0.709999979, 0, 0.949999988, 0)
             ScrollingFrame_2.CanvasSize = UDim2.new(0, 0, 0, 0)
             ScrollingFrame_2.BorderSizePixel=0;
             ScrollingFrame_2.ScrollBarThickness=0;
-            ScrollingFrame_2.ScrollBarImageColor3=Color3.fromRGB(255, 78, 78)
+            ScrollingFrame_2.ScrollBarImageColor3=Color3.fromRGB(255,255,255)
             if CategoryAmount==1 then 
                 CurrentTab=ScrollingFrame_2;
             end;
@@ -389,7 +388,7 @@ function Library:Initiate()
                 local Elements={};
                 Frame_2.Parent = Sections_2
                 Frame_2.AnchorPoint = Vector2.new(0.5, 0.5)
-                Frame_2.BackgroundColor3 = Color3.fromRGB(255, 78, 78)
+                Frame_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
                 Frame_2.BackgroundTransparency = 1.000
                 Frame_2.Position = UDim2.new(0.5, 0, 0.5, 0)
                 Frame_2.Size = UDim2.new(0.971540928, 0, 1, 0)
@@ -399,13 +398,13 @@ function Library:Initiate()
                 local Title = Instance.new("TextLabel")
                 Title.Name = "Block"
                 Title.Parent = Frame_2
-                Title.BackgroundColor3 = Color3.fromRGB(255, 78, 78)
+                Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
                 Title.BackgroundTransparency = 1.000
                 Title.Position = UDim2.new(0.018108651, 0, 0, 0)
                 Title.Size = UDim2.new(0.381999999, 0, 0, 10)
                 Title.Font = Enum.Font.GothamBlack
                 Title.Text = '';
-                Title.TextColor3 = Color3.fromRGB(255, 78, 78)
+                Title.TextColor3 = Color3.fromRGB(255, 255, 255)
                 Title.TextSize = 14.000
                 Title.TextXAlignment = Enum.TextXAlignment.Left
                 function Elements:CreateTitle(Name)
@@ -416,13 +415,13 @@ function Library:Initiate()
                     local Title = Instance.new("TextLabel")
                     Title.Name = "Title"
                     Title.Parent = Frame_2
-                    Title.BackgroundColor3 = Color3.fromRGB(255, 78, 78)
+                    Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
                     Title.BackgroundTransparency = 1.000
                     Title.Position = UDim2.new(0.018108651, 0, 0, 0)
                     Title.Size = UDim2.new(0.381999999, 0, 0, 30)
                     Title.Font = Enum.Font.GothamBlack
                     Title.Text = Name
-                    Title.TextColor3 = Color3.fromRGB(255, 78, 78)
+                    Title.TextColor3 = Color3.fromRGB(255, 255, 255)
                     Title.TextSize = 14.000
                     Title.TextXAlignment = Enum.TextXAlignment.Left
                     Sections_2.Size=Sections_2.Size+UDim2.new(0,0,0,40)
@@ -472,13 +471,13 @@ function Library:Initiate()
                     Title_4.Name = "Title"
                     Title_4.Parent = MainButton_3
                     Title_4.AnchorPoint = Vector2.new(0.5, 0.5)
-                    Title_4.BackgroundColor3 = Color3.fromRGB(255, 78, 78)
+                    Title_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
                     Title_4.BackgroundTransparency = 1.000
                     Title_4.Position = UDim2.new(0.5, 0, 0.5, 0)
                     Title_4.Size = UDim2.new(0.222422868, 0, 0, 35)
                     Title_4.Font = Enum.Font.GothamBold
                     Title_4.Text = Name;
-                    Title_4.TextColor3 = Color3.fromRGB(255, 78, 78)
+                    Title_4.TextColor3 = Color3.fromRGB(255, 255, 255)
                     Title_4.TextSize = 14.000
                     Sections_2.Size=Sections_2.Size+UDim2.new(0,0,0,47)
                     ScrollingFrame_2.CanvasSize=ScrollingFrame_2.CanvasSize+UDim2.new(0,0,0,51)
@@ -511,16 +510,16 @@ function Library:Initiate()
 
                         TextLabel2.Parent = HelpFrame
                         TextLabel2.AnchorPoint = Vector2.new(0.5, 0.5)
-                        TextLabel2.BackgroundColor3 = Color3.fromRGB(255, 78, 78)
+                        TextLabel2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
                         TextLabel2.BackgroundTransparency = 1
                         TextLabel2.Position = UDim2.new(0.52, 0, 0.5, 0)
                         TextLabel2.Size = UDim2.new(1, 0, 1, 0)
                         TextLabel2.ZIndex = 2
                         TextLabel2.Font = Enum.Font.GothamBold
                         TextLabel2.Text = HelpInfo or 'Describe the feature here';
-                        TextLabel2.TextColor3 = Color3.fromRGB(255, 78, 78)
+                        TextLabel2.TextColor3 = Color3.fromRGB(255, 255, 255)
                         TextLabel2.TextSize = 12.000
-                        TextLabel2.TextStrokeColor3 = Color3.fromRGB(255, 78, 78)
+                        TextLabel2.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
                         TextLabel2.TextWrapped = true
                         TextLabel2.TextXAlignment = Enum.TextXAlignment.Left
                         Help.Name = "Help"
@@ -534,7 +533,7 @@ function Library:Initiate()
                         Help.AutoButtonColor = false
                         Help.Font = Enum.Font.GothamBold
                         Help.Text = "+"
-                        Help.TextColor3 = Color3.fromRGB(255, 78, 78)
+                        Help.TextColor3 = Color3.fromRGB(255, 255, 255)
                         Help.TextSize = 18.000
                         local Toggled=false;
                         Help.MouseButton1Click:Connect(function()
@@ -596,13 +595,13 @@ function Library:Initiate()
                     Title_4.Name = "Title"
                     Title_4.Parent = MainButton_3
                     Title_4.AnchorPoint = Vector2.new(0.5, 0.5)
-                    Title_4.BackgroundColor3 = Color3.fromRGB(255, 78, 78)
+                    Title_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
                     Title_4.BackgroundTransparency = 1.000
                     Title_4.Position = UDim2.new(0.5, 0, 0.5, 0)
                     Title_4.Size = UDim2.new(0.222422868, 0, 0, 35)
                     Title_4.Font = Enum.Font.GothamBold
                     Title_4.Text = Name;
-                    Title_4.TextColor3 = Color3.fromRGB(255, 78, 78)
+                    Title_4.TextColor3 = Color3.fromRGB(255, 255, 255)
                     Title_4.TextSize = 14.000
                     Sections_2.Size=Sections_2.Size+UDim2.new(0,0,0,47)
                     ScrollingFrame_2.CanvasSize=ScrollingFrame_2.CanvasSize+UDim2.new(0,0,0,51)
@@ -653,20 +652,20 @@ function Library:Initiate()
 
                     Title_3.Name = "Title"
                     Title_3.Parent = Toggle
-                    Title_3.BackgroundColor3 = Color3.fromRGB(255, 78, 78)
+                    Title_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
                     Title_3.BackgroundTransparency = 1.000
                     Title_3.Position = UDim2.new(0.0181086548, 0, 0.0500000007, 0)
                     Title_3.Size = UDim2.new(0.222422868, 0, 0, 35)
                     Title_3.Font = Enum.Font.GothamBold
                     Title_3.Text = Name
-                    Title_3.TextColor3 = Color3.fromRGB(255, 78, 78)
+                    Title_3.TextColor3 = Color3.fromRGB(255, 255, 255)
                     Title_3.TextSize = 14.000
                     Title_3.TextXAlignment = Enum.TextXAlignment.Left
 
                     MainButton_2.Name = "MainButton"
                     MainButton_2.Parent = Toggle
                     MainButton_2.AnchorPoint = Vector2.new(0.5, 0.5)
-                    MainButton_2.BackgroundColor3 = Color3.fromRGB(255, 78, 78)
+                    MainButton_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
                     MainButton_2.BorderColor3 = Color3.fromRGB(27, 42, 53)
                     MainButton_2.BorderSizePixel = 0
                     MainButton_2.Position = UDim2.new(0.8957110195, 0, 0.5, 0)
@@ -695,16 +694,16 @@ function Library:Initiate()
 
                         TextLabel2.Parent = HelpFrame
                         TextLabel2.AnchorPoint = Vector2.new(0.5, 0.5)
-                        TextLabel2.BackgroundColor3 = Color3.fromRGB(255, 78, 78)
+                        TextLabel2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
                         TextLabel2.BackgroundTransparency = 1
                         TextLabel2.Position = UDim2.new(0.52, 0, 0.5, 0)
                         TextLabel2.Size = UDim2.new(1, 0, 1, 0)
                         TextLabel2.ZIndex = 2
                         TextLabel2.Font = Enum.Font.GothamBold
                         TextLabel2.Text = HelpInfo or 'Describe the feature here';
-                        TextLabel2.TextColor3 = Color3.fromRGB(255, 78, 78)
+                        TextLabel2.TextColor3 = Color3.fromRGB(255, 255, 255)
                         TextLabel2.TextSize = 12.000
-                        TextLabel2.TextStrokeColor3 = Color3.fromRGB(255, 78, 78)
+                        TextLabel2.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
                         TextLabel2.TextWrapped = true
                         TextLabel2.TextXAlignment = Enum.TextXAlignment.Left
                         Help.Name = "Help"
@@ -718,7 +717,7 @@ function Library:Initiate()
                         Help.AutoButtonColor = false
                         Help.Font = Enum.Font.GothamBold
                         Help.Text = "+"
-                        Help.TextColor3 = Color3.fromRGB(255, 78, 78)
+                        Help.TextColor3 = Color3.fromRGB(255, 255, 255)
                         Help.TextSize = 18.000
                         local Toggled=false;
                         Help.MouseButton1Click:Connect(function()
@@ -814,13 +813,13 @@ function Library:Initiate()
 
                     Title_5.Name = "Title"
                     Title_5.Parent = Keybind
-                    Title_5.BackgroundColor3 = Color3.fromRGB(255, 78, 78)
+                    Title_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
                     Title_5.BackgroundTransparency = 1.000
                     Title_5.Position = UDim2.new(0.0181086548, 0, 0.0500000007, 0)
                     Title_5.Size = UDim2.new(0.222422868, 0, 0, 35)
                     Title_5.Font = Enum.Font.GothamBold
                     Title_5.Text = Name or 'None';
-                    Title_5.TextColor3 = Color3.fromRGB(255, 78, 78)
+                    Title_5.TextColor3 = Color3.fromRGB(255, 255, 255)
                     Title_5.TextSize = 14.000
                     Title_5.TextXAlignment = Enum.TextXAlignment.Left
 
@@ -832,7 +831,7 @@ function Library:Initiate()
                     Input_2.Size = UDim2.new(0.193649757, 0, 0.5, 0)
                     Input_2.Font = Enum.Font.GothamBold
                     Input_2.Text = (Default and Default.Name) or 'None';
-                    Input_2.TextColor3 = Color3.fromRGB(255, 78, 78)
+                    Input_2.TextColor3 = Color3.fromRGB(255, 255, 255)
                     Input_2.TextSize = 14.000
 
                     if HelpToggled then
@@ -853,16 +852,16 @@ function Library:Initiate()
 
                         TextLabel2.Parent = HelpFrame
                         TextLabel2.AnchorPoint = Vector2.new(0.5, 0.5)
-                        TextLabel2.BackgroundColor3 = Color3.fromRGB(255, 78, 78)
+                        TextLabel2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
                         TextLabel2.BackgroundTransparency = 1
                         TextLabel2.Position = UDim2.new(0.52, 0, 0.5, 0)
                         TextLabel2.Size = UDim2.new(1, 0, 1, 0)
                         TextLabel2.ZIndex = 2
                         TextLabel2.Font = Enum.Font.GothamBold
                         TextLabel2.Text = HelpInfo or 'Describe the feature here';
-                        TextLabel2.TextColor3 = Color3.fromRGB(255, 78, 78)
+                        TextLabel2.TextColor3 = Color3.fromRGB(255, 255, 255)
                         TextLabel2.TextSize = 12.000
-                        TextLabel2.TextStrokeColor3 = Color3.fromRGB(255, 78, 78)
+                        TextLabel2.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
                         TextLabel2.TextWrapped = true
                         TextLabel2.TextXAlignment = Enum.TextXAlignment.Left
                         Help.Name = "Help"
@@ -876,7 +875,7 @@ function Library:Initiate()
                         Help.AutoButtonColor = false
                         Help.Font = Enum.Font.GothamBold
                         Help.Text = "+"
-                        Help.TextColor3 = Color3.fromRGB(255, 78, 78)
+                        Help.TextColor3 = Color3.fromRGB(255, 255, 255)
                         Help.TextSize = 18.000
                         local Toggled=false;
                         Help.MouseButton1Click:Connect(function()
@@ -983,13 +982,13 @@ function Library:Initiate()
 
                     Title_6.Name = "Title"
                     Title_6.Parent = Textbox
-                    Title_6.BackgroundColor3 = Color3.fromRGB(255, 78, 78)
+                    Title_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
                     Title_6.BackgroundTransparency = 1.000
                     Title_6.Position = UDim2.new(0.0181086548, 0, 0.0500000007, 0)
                     Title_6.Size = UDim2.new(0.222422868, 0, 0, 35)
                     Title_6.Font = Enum.Font.GothamBold
                     Title_6.Text = Name
-                    Title_6.TextColor3 = Color3.fromRGB(255, 78, 78)
+                    Title_6.TextColor3 = Color3.fromRGB(255, 255, 255)
                     Title_6.TextSize = 14.000
                     Title_6.TextXAlignment = Enum.TextXAlignment.Left
 
@@ -1001,7 +1000,7 @@ function Library:Initiate()
                     Input_3.Size = UDim2.new(0.366037965, 0, 0.5, 0)
                     Input_3.Font = Enum.Font.GothamBold
                     Input_3.Text =(PlayerList and tostring(game.Players.LocalPlayer))or Default-- or'...';
-                    Input_3.TextColor3 = Color3.fromRGB(255, 78, 78)
+                    Input_3.TextColor3 = Color3.fromRGB(255, 255, 255)
                     Input_3.TextSize = 14.000
                     if Clear then
                         Input_3.ClearTextOnFocus=false;
@@ -1048,16 +1047,16 @@ function Library:Initiate()
 
                         TextLabel2.Parent = HelpFrame
                         TextLabel2.AnchorPoint = Vector2.new(0.5, 0.5)
-                        TextLabel2.BackgroundColor3 = Color3.fromRGB(255, 78, 78)
+                        TextLabel2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
                         TextLabel2.BackgroundTransparency = 1
                         TextLabel2.Position = UDim2.new(0.52, 0, 0.5, 0)
                         TextLabel2.Size = UDim2.new(1, 0, 1, 0)
                         TextLabel2.ZIndex = 2
                         TextLabel2.Font = Enum.Font.GothamBold
                         TextLabel2.Text = HelpInfo or 'Describe the feature here';
-                        TextLabel2.TextColor3 = Color3.fromRGB(255, 78, 78)
+                        TextLabel2.TextColor3 = Color3.fromRGB(255, 255, 255)
                         TextLabel2.TextSize = 12.000
-                        TextLabel2.TextStrokeColor3 = Color3.fromRGB(255, 78, 78)
+                        TextLabel2.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
                         TextLabel2.TextWrapped = true
                         TextLabel2.TextXAlignment = Enum.TextXAlignment.Left
                         Help.Name = "Help"
@@ -1071,7 +1070,7 @@ function Library:Initiate()
                         Help.AutoButtonColor = false
                         Help.Font = Enum.Font.GothamBold
                         Help.Text = "+"
-                        Help.TextColor3 = Color3.fromRGB(255, 78, 78)
+                        Help.TextColor3 = Color3.fromRGB(255, 255, 255)
                         Help.TextSize = 18.000
                         local Toggled=false;
                         Help.MouseButton1Click:Connect(function()
@@ -1144,7 +1143,7 @@ function Library:Initiate()
                     Input.Size = UDim2.new(0.366037965, 0, 0.5, 0)
                     Input.Font = Enum.Font.GothamBold
                     Input.Text =(Options[1]~=nil and Default)or(PlayerDropType=='Both'and tostring(game.Players.LocalPlayer.DisplayName)..' @'..tostring(game.Players.LocalPlayer))or(PlayerDropType=='DisplayName'and tostring(game.Players.LocalPlayer))or(PlayerDropType=='UserName'and tostring(game.Players.LocalPlayer.DisplayName)or'None')
-                    Input.TextColor3 = Color3.fromRGB(255, 78, 78)
+                    Input.TextColor3 = Color3.fromRGB(255, 255, 255)
                     Input.TextSize = 14.000
                     Input.TextXAlignment = Enum.TextXAlignment.Left
 
@@ -1162,7 +1161,7 @@ function Library:Initiate()
                     MainButton.AutoButtonColor = false
                     MainButton.Font = Enum.Font.GothamBold
                     MainButton.Text = "+"
-                    MainButton.TextColor3 = Color3.fromRGB(255, 78, 78)
+                    MainButton.TextColor3 = Color3.fromRGB(255, 255, 255)
                     MainButton.TextSize = 22.000
 
                     UICorner_3.Parent = MainButton
@@ -1180,7 +1179,7 @@ function Library:Initiate()
 
                     Frame_3.Parent = ScrollingFrame2
                     Frame_3.AnchorPoint = Vector2.new(0.5, 0.5)
-                    Frame_3.BackgroundColor3 = Color3.fromRGB(255, 78, 78)
+                    Frame_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
                     Frame_3.BackgroundTransparency = 1
                     Frame_3.BorderSizePixel = 0
                     Frame_3.Position = UDim2.new(0.5, 0, 0.5, 0)
@@ -1223,7 +1222,7 @@ function Library:Initiate()
                         TextButton_2.ZIndex = -1
                         TextButton_2.Font = Enum.Font.GothamBold
                         TextButton_2.Text = Name
-                        TextButton_2.TextColor3 = Color3.fromRGB(255, 78, 78)
+                        TextButton_2.TextColor3 = Color3.fromRGB(255, 255, 255)
                         TextButton_2.TextSize = 14.000
                         TextButton_2.TextWrapped = true
                         TextButton_2.AutoButtonColor=false;
@@ -1382,13 +1381,13 @@ function Library:Initiate()
 
                     Title_2.Name = "Title"
                     Title_2.Parent = Slider
-                    Title_2.BackgroundColor3 = Color3.fromRGB(255, 78, 78)
+                    Title_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
                     Title_2.BackgroundTransparency = 1.000
                     Title_2.Position = UDim2.new(0.0181086548, 0, 0.0500000007, 0)
                     Title_2.Size = UDim2.new(0.222422868, 0, 0, 35)
                     Title_2.Font = Enum.Font.GothamBold
                     Title_2.Text = Name;
-                    Title_2.TextColor3 = Color3.fromRGB(255, 78, 78)
+                    Title_2.TextColor3 = Color3.fromRGB(255, 255, 255)
                     Title_2.TextSize = 14.000
                     Title_2.TextXAlignment = Enum.TextXAlignment.Left
 
@@ -1403,7 +1402,7 @@ function Library:Initiate()
                     Plus.AutoButtonColor = false
                     Plus.Font = Enum.Font.GothamBold
                     Plus.Text = "+"
-                    Plus.TextColor3 = Color3.fromRGB(255, 78, 78)
+                    Plus.TextColor3 = Color3.fromRGB(255, 255, 255)
                     Plus.TextSize = 16.000
 
                     if Header then 
@@ -1423,13 +1422,13 @@ function Library:Initiate()
                         Title_2.Name = "Title"
                         Title_2.Parent = Slider
                         Title_2.AnchorPoint = Vector2.new(0.5, 0.5)
-                        Title_2.BackgroundColor3 = Color3.fromRGB(255, 78, 78)
+                        Title_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
                         Title_2.BackgroundTransparency = 1.000
                         Title_2.Position = UDim2.new(0.5, 0, 0.5, 0)
                         Title_2.Size = UDim2.new(0.222422868, 0, 0, 35)
                         Title_2.Font = Enum.Font.GothamBold
                         Title_2.Text = '';
-                        Title_2.TextColor3 = Color3.fromRGB(255, 78, 78)
+                        Title_2.TextColor3 = Color3.fromRGB(255, 255, 255)
                         Title_2.TextSize = 14.000
                         Title_2.TextXAlignment = Enum.TextXAlignment.Center
                         Sections_2.Size=Sections_2.Size+UDim2.new(0,0,0,27)
@@ -1456,16 +1455,16 @@ function Library:Initiate()
 
                         TextLabel2.Parent = HelpFrame
                         TextLabel2.AnchorPoint = Vector2.new(0.5, 0.5)
-                        TextLabel2.BackgroundColor3 = Color3.fromRGB(255, 78, 78)
+                        TextLabel2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
                         TextLabel2.BackgroundTransparency = 1
                         TextLabel2.Position = UDim2.new(0.52, 0, 0.5, 0)
                         TextLabel2.Size = UDim2.new(1, 0, 1, 0)
                         TextLabel2.ZIndex = 2
                         TextLabel2.Font = Enum.Font.GothamBold
                         TextLabel2.Text = HelpInfo or 'Describe the feature here';
-                        TextLabel2.TextColor3 = Color3.fromRGB(255, 78, 78)
+                        TextLabel2.TextColor3 = Color3.fromRGB(255, 255, 255)
                         TextLabel2.TextSize = 12.000
-                        TextLabel2.TextStrokeColor3 = Color3.fromRGB(255, 78, 78)
+                        TextLabel2.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
                         TextLabel2.TextWrapped = true
                         TextLabel2.TextXAlignment = Enum.TextXAlignment.Left
                         Help.Name = "Help"
@@ -1479,7 +1478,7 @@ function Library:Initiate()
                         Help.AutoButtonColor = false
                         Help.Font = Enum.Font.GothamBold
                         Help.Text = "+"
-                        Help.TextColor3 = Color3.fromRGB(255, 78, 78)
+                        Help.TextColor3 = Color3.fromRGB(255, 255, 255)
                         Help.TextSize = 18.000
                         TextLabel2.TextTransparency=0;
                         local Toggled=false;
@@ -1517,7 +1516,7 @@ function Library:Initiate()
                     Minus.AutoButtonColor = false
                     Minus.Font = Enum.Font.GothamBold
                     Minus.Text = "-"
-                    Minus.TextColor3 = Color3.fromRGB(255, 78, 78)
+                    Minus.TextColor3 = Color3.fromRGB(255, 255, 255)
                     Minus.TextSize = 16.000
 
                     Input.Name = "Input"
@@ -1528,7 +1527,7 @@ function Library:Initiate()
                     Input.Size = UDim2.new(0.087533094, 0, 0.5, 0)
                     Input.Font = Enum.Font.GothamBold
                     Input.Text = Min
-                    Input.TextColor3 = Color3.fromRGB(255, 78, 78)
+                    Input.TextColor3 = Color3.fromRGB(255, 255, 255)
                     Input.TextSize = 14.000
 
                     UICorner_5.Parent = Input
@@ -1549,7 +1548,7 @@ function Library:Initiate()
                     MainSlider.Name = "MainSlider"
                     MainSlider.AnchorPoint=Vector2.new(0,.5)
                     MainSlider.Parent = Background
-                    MainSlider.BackgroundColor3 = Color3.fromRGB(255, 78, 78)
+                    MainSlider.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
                     MainSlider.BorderColor3 = Color3.fromRGB(27, 42, 53)
                     MainSlider.BorderSizePixel = 0
                     MainSlider.Position = UDim2.new(0, 0, .5, 0)
@@ -1667,7 +1666,7 @@ function Library:Initiate()
         return Tab
     end;
     ImageButton_2.Parent = Categories
-    ImageButton_2.BackgroundColor3 = Color3.fromRGB(255, 78, 78)
+    ImageButton_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
     ImageButton_2.BackgroundTransparency = 1.000
     ImageButton_2.BorderSizePixel = 0
     ImageButton_2.Position = UDim2.new(0, 0, 0,-10)
@@ -1686,14 +1685,14 @@ function Library:Initiate()
     SearchFrame.Visible=    false;
     SearchFrame.Name='Search'
     SearchFrame.AnchorPoint = Vector2.new(0.5, 0.5)
-    SearchFrame.BackgroundColor3 = Color3.fromRGB(255, 78, 78)
+    SearchFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
     SearchFrame.BackgroundTransparency = 1
     SearchFrame.Position = UDim2.new(0.615, 0, 0.5, 0)
     SearchFrame.Size = UDim2.new(0.709999979, 0, 0.949999988, 0)
     SearchFrame.CanvasSize = UDim2.new(0, 0, 0, 0)
     SearchFrame.BorderSizePixel=0;
     SearchFrame.ScrollBarThickness=0;
-    SearchFrame.ScrollBarImageColor3=Color3.fromRGB(255, 78, 78)
+    SearchFrame.ScrollBarImageColor3=Color3.fromRGB(255,255,255)
 
     -- ScrollingFrame_2.CanvasSize=ScrollingFrame_2.CanvasSize+UDim2.new(0,0,0,40)
     local Frame_2 = Instance.new("Frame")
@@ -1709,7 +1708,7 @@ function Library:Initiate()
     UICorner_3.Parent = Sections_2
     Frame_2.Parent = Sections_2
     Frame_2.AnchorPoint = Vector2.new(0.5, 0.5)
-    Frame_2.BackgroundColor3 = Color3.fromRGB(255, 78, 78)
+    Frame_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
     Frame_2.BackgroundTransparency = 0
     Frame_2.Position = UDim2.new(0.5, 0, 0.5, 0)
     Frame_2.Size = UDim2.new(0.971540928, 0, 1, 0)
@@ -1729,7 +1728,7 @@ function Library:Initiate()
     -- TextBox.Size = UDim2.new(0.800000012, 0, 0.0399999991, 0)
     -- TextBox.Font = Enum.Font.GothamBold
     -- TextBox.Text = "Search..."
-    -- TextBox.TextColor3 = Color3.fromRGB(255, 78, 78)
+    -- TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
     -- TextBox.TextSize = 12.000
     -- local OldParents={};
     local function Close()
